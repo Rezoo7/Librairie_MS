@@ -21,7 +21,7 @@ public class Livre {
     public String toString() {
         return
                 "Titre='" + title + '\'' +
-                ", Auteur= CHANGEMENT!" + lauteur +
+                ", Auteur= OHOH!" + lauteur +
                 ", Parution=" + parution +
                 ", Pages=" + pages + "p "+ "\n";
     }
