@@ -2,7 +2,30 @@ package vue;
 
 import model.*;
 
-public class Application {
+import javax.swing.*;
+import java.awt.*;
+
+public class Application extends JFrame {
+
+    //Application avec SWING démarrage
+
+    public Application(){
+
+        this.setTitle("Bibliothèque");
+        this.setLocationRelativeTo(null);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setSize(new Dimension(1000,500));
+
+
+        JPanel thepanel = new JPanel();
+        thepanel.setBackground(Color.BLUE);
+
+
+
+        this.setContentPane(thepanel);
+        this.setVisible(true);
+
+    }
 
 
 
@@ -10,20 +33,7 @@ public class Application {
     public static void main(String[] args){
 
 
-
-        Auteur moi = new Auteur("Maxime","Guigourez",1998);
-        Livre saucisson = new Livre("Saucisson",moi,2016,100);
-        Livre becherelle = new Livre("TheBecherelle",moi,1950,122);
-        Livre sciences= new Livre("Sciences",moi,2016,255);
-        Livre Life = new Livre("MaVie",moi,2018,1000);
-
-        moi.ajouterLivre(saucisson);
-        moi.ajouterLivre(becherelle);
-        moi.ajouterLivre(sciences);
-        moi.ajouterLivre(Life);
-
-
-        System.out.println(moi.saListe());
+        Application laVue = new Application();
 
     }
 

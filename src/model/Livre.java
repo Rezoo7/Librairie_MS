@@ -9,9 +9,8 @@ public class Livre {
 
     public Livre(String titre, Auteur aut, int paru, int nbpages){
 
-
-        this.lauteur = aut;
         this.title = titre;
+        this.lauteur = aut;
         this.parution = paru;
         this.pages = nbpages;
 
