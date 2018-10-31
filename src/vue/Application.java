@@ -37,7 +37,13 @@ public class Application extends JFrame {
     public static void main(String[] args){
 
 
-        Application laVue = new Application();
+       //Application laVue = new Application();
+
+        Auteur moi = new Auteur("Maxime","Guigourez",1998);
+        System.out.println(moi.toString());
+        Auteur simon = new Auteur("Simon","Gautier",1998);
+        System.out.println(simon.toString());
+
 
     }
 
