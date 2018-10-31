@@ -17,8 +17,12 @@ public class Application extends JFrame {
         this.setSize(new Dimension(1000,500));
 
 
+        JPanel gauche = new JPanel();
+        JPanel droit = new JPanel();
+
+
         JPanel thepanel = new JPanel();
-        thepanel.setBackground(Color.BLUE);
+
 
 
 
