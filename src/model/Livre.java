@@ -20,9 +20,9 @@ public class Livre {
     public String toString() {
         return
                 "Titre='" + title + '\'' +
-                ", Auteur= " + lauteur +
-                ", Parution=" + parution +
-                ", Pages=" + pages + "p "+ "\n";
+                        ", Auteur= " + lauteur +
+                        ", Parution=" + parution +
+                        ", Pages=" + pages + "p "+ "\n";
     }
 
     public String getTitle() {
