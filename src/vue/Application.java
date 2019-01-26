@@ -28,6 +28,9 @@ public class Application extends JFrame {
 
         this.setContentPane(thepanel);
         this.setVisible(true);
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        this.setSize(new Dimension(640,480));
+        this.setLocationRelativeTo(null);
 
     }
 
@@ -37,7 +40,7 @@ public class Application extends JFrame {
     public static void main(String[] args){
 
 
-       //Application laVue = new Application();
+       Application laVue = new Application();
 
         Auteur moi = new Auteur("Maxime","Guigourez",1998);
         System.out.println(moi.toString());
